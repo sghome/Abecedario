@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Alfabeto - Español</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+
+
+</head>
+<body>
+
+
+
+
+
+<h4>Vocales</h4>
+<div class="flip">
+    <div class="front" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwsC5O-Ib4Lmc3PLzr4bVxHH-6h94E0R8OQg&usqp=CAU)">
+       <h1 class="text-shadow">A</hi>
+    </div>
+    <div class="back">
+      <h2>Actor</h2>
+      <p>актер</p>
+      <label>
+        <button class="btn btn-primary btn-sm" @click.prevent="playSound('a.mp3')"><span class="fa fa-play-circle-o"></span></button>
+        Palabras con A
+      </label>
+      <br>
+
+      </div>
+</div>
+<div class="flip">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">E</hi>
+    </div>
+    <div class="back">
+       <h2>Estepa</h2>
+       <p>степь</p>
+       <label>
+         <button class="btn btn-primary btn-sm" @click.prevent="playSound('e.mp3')"><span class="fa fa-play-circle-o"></span></button>
+         Palabras con E
+       </label>
+    </div>
+</div>
+<div class="flip">
+    <div class="front" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQymKiCfI2fdSdnicmN2-bH0XU3r4jGlZ_Zcw&usqp=CAU)">
+       <h1 class="text-shadow">I</hi>
+    </div>
+    <div class="back">
+       <h2>Intriga</h2>
+       <p>ИНТРИГА</p>
+    </div>
+</div>
+
+
+
+
+<br>
+<br>
+
+
+<div class="flip">
+    <div class="front" style="background-image: url(https://images.unsplash.com/photo-1494869042583-f6c911f04b4c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8&w=1000&q=80)">
+       <h1 class="text-shadow">O</hi>
+    </div>
+    <div class="back">
+       <h2>Ojo</h2>
+       <p>око (глаз)</p>
+    </div>
+</div>
+
+<div class="flip">
+    <div class="front" style="background-image: url(https://cdnb.artstation.com/p/assets/images/images/021/700/265/large/renderhub-3d-models-spacesuit-nasa-aces-04.jpg?1572625510)">
+       <h1 class="text-shadow">U</hi>
+    </div>
+    <div class="back">
+       <h2>Uniforme</h2>
+       <p>УНИФОРМА</p>
+    </div>
+</div>
+
+
+<h4>Consonantes</h4>
+<div class="flip flip-vertical">
+    <div class="front" style="background-image: url(https://images.ctfassets.net/cfexf643femz/1ZO19Kw0Z0VNKRBse47rXX/8cd14ac8e6081eb6b9a5f9c6a87a0c9f/WhatsApp_Image_2020-09-02_at_6.21.41_PM.jpeg)">
+       <h1 class="text-shadow">B</hi>
+    </div>
+    <div class="back">
+       <h2>Balcón</h2>
+       <p>балкон</p>
+    </div>
+</div>
+<div class="flip flip-vertical">
+    <div class="front" style="background-image: url(https://lh3.googleusercontent.com/proxy/wYNfLSTJFahNez7CGwSecudr7oebJHeSCUP5VhA72y8GULZhRB5-gK6LJR6RvJXqP66BNPKqUmzwH6t3501cnfDC8bzHYLcWzU1_uLfdoPnVnsUT-xZeZLrJsBBj7eehPdlFzqAWW2Uensb-teSyKcYFYeWxs_bLklm9NyBP90s)">
+       <h1 class="text-shadow">C</hi>
+    </div>
+    <div class="back">
+       <h2>Cultura</h2>
+       <p>культура</p>
+    </div>
+</div>
+<div class="flip flip-vertical">
+    <div class="front" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmbkBXOUFiu_I5r1b3MFPdymfkh_3HtdwBYw&usqp=CAU)">
+       <h1 class="text-shadow">D</hi>
+    </div>
+    <div class="back">
+       <h2>DRAMÁTICO</h2>
+       <p>ДРАМАТИЧЕСКИЙ</p>
+    </div>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js'></script>
+<script>new Vue({
+  el: '#app',
+  data: {
+    text: ''
+  },
+  methods: {
+    playSound (sound) {
+      if(sound) {
+        var audio = new Audio(sound);
+        audio.play();
+      }
+    }
+  }
+});</script>
+
+  <script  src="./script.js"></script>
+  <!-- partial -->
+
+
+</body>
+</html>
